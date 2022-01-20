@@ -1,0 +1,658 @@
+/*
+Theme Name: Velo Portfolio
+Text Domain: Velo
+Version: 1.0
+Description: Velo is a Wordpress portfolio theme suitable for designers, developers, freelancers and anyone else. Can be easily and quickly customized according to everyone's needs with the help of wordpress customizer and other plugins without any code. It's based on Bootstrap v5 and it works great on all devices, any screen size, including desktops, laptops, tablets and mobile phones.
+Tags: Portfolio, Wordpress, Theme, Developer, Velo, Designer, Freelancer, Responsive, Mobile, Gallery, Custom, Template, Web, Website, HTML5, Bootstrap, CSS, PHP
+Author: Cristian Ciuca (Criatix)
+Author URI: https://www.templatemonster.com/authors/criatix/
+*/
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  background-color: #131313;
+  color: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Links */
+a:link {
+  text-decoration: none;
+}
+
+a {
+  color: #4990fb;
+}
+
+a:hover {
+  color: #d04b38 !important;
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Navbar */
+
+/* Bootstrap Navbar Properties */
+.navbar-dark {
+  padding-left: 10rem;
+  padding-right: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  height: 8rem;
+  transition: 500ms ease;
+  background: transparent !important;
+  transition: 0.5s;
+}
+
+/* Navbar Title (Logo) */
+.navbar-brand {
+  font-size: 3rem;
+  font-family: "Megrim", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+/* Links from Navbar */
+.navbar-dark .nav-link {
+  color: #fff !important;
+  margin-right: 2.5rem;
+  font-size: 1rem;
+}
+
+/* Active link color in Navbar */
+.navbar-dark .active {
+  color: #e64016 !important;
+}
+
+/* Links color hover in Navbar */
+.navbar-dark .nav-link:hover {
+  color: #e64016 !important;
+  border-bottom: 1px solid #e64016;
+}
+
+/* ".shrink" class added to Navbar on scroll */
+.navbar-dark.shrink {
+  height: 6rem;
+  background-color: #1f1f1f !important;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Links color on scrolled Navbar */
+.navbar-dark.shrink .nav-link {
+  color: #fff !important;
+}
+
+/* Active link color in Navbar scrolled */
+.navbar-dark.shrink .active {
+  color: #e64016 !important;
+}
+
+/* Hover links color on Navbar scrolled */
+.navbar-dark.shrink .nav-link:hover {
+  color: #e64016 !important;
+}
+
+/* Logo from scrolled Navbar */
+.navbar-dark.shrink .navbar-brand {
+  font-size: 2.5rem;
+  transition: 0.5s;
+}
+
+/* Navigation Menu on Small Screen */
+.collapse {
+  transition: 0.2s;
+  padding: 2rem;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 991px) {
+  .collapse {
+    background-color: #000;
+  }
+}
+/* Responsive Media Queries */
+@media screen and (max-width: 1050px) {
+  .navbar-dark {
+    padding-left: 2rem;
+  }
+}
+/* Responsive Media Queries */
+@media screen and (max-width: 364px) {
+  .navbar-brand {
+    font-size: 1.4rem !important;
+  }
+}
+/* End Navbar */
+
+/* Buttons */
+
+/* Custom Button White */
+.button-white {
+  font-size: 0.8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-family: "Poppins Medium", sans-serif;
+  padding: 0.8rem 2.2rem 0.8rem 2.2rem;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom Button Text Link */
+.btn-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "Poppins Medium", sans-serif;
+  color: #ccc;
+  text-decoration: none !important;
+}
+/* End Buttons */
+
+/* HOME Section */
+
+/* Home Main Container */
+#home {
+  height: 120vh;
+  width: 100%;
+}
+
+/* Left Container from Home */
+.home-left {
+  height: 100vh;
+}
+
+/* Content container from Home Left Container */
+.left-content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  float: right;
+}
+
+/* Hello Message Title */
+.hello {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Main Name */
+.main-name {
+  font-size: 7rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  margin-top: -1rem;
+  text-transform: uppercase;
+}
+
+/* Occupation over name (TextTyping) */
+.occupation {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* Right Container from Home */
+.home-right {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+/* Social Links Icons */
+.social-links .fab {
+  color: #fff;
+  margin-right: 2rem;
+  margin-top: 4rem;
+}
+
+/* Social Links Icons */
+.social-links .fab:hover {
+  color: #f03e3e;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 991px) {
+  .left-content {
+    float: none;
+  }
+
+  .home-right {
+    display: none;
+  }
+
+  .main-name {
+    font-size: 4rem;
+  }
+
+  .hello {
+    text-align: center;
+  }
+
+  .post-title {
+    font-size: 1.5rem !important;
+  }
+
+  .post-header {
+    padding: 6rem !important;
+  }
+
+  .about-img {
+    float: none !important;
+    margin: 0 auto !important;
+    display: block !important;
+    margin-top: -5rem !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .main-name {
+    font-size: 5rem;
+  }
+}
+/* End HOME Section */
+
+/* About Section */
+
+/* About Image */
+.about-img {
+  width: 60%;
+  float: right;
+  margin-right: 2rem;
+  margin-top: -7rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 5px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* About Left Container */
+.about-left {
+  padding: 2rem;
+}
+
+/* About Right Container */
+.about-right {
+  padding: 2rem;
+  padding-right: 5rem;
+}
+
+/* Sections Main Title */
+.sections-title {
+  font-size: 4rem;
+  font-family: "Poppins SemiBold", sans-serif;
+}
+
+/* Description */
+.description {
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+
+}
+
+/* Hire Me Title */
+.hire-title {
+  font-size: 1.4rem;
+  font-family: "Poppins SemiBold", sans-serif;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+}
+
+/* Hire me links */
+.hire {
+  color: #777777;
+}
+
+/* End About Section */
+
+/* Services Section */
+
+/* Services Cards */
+.services-card {
+  padding: 2.2rem;
+  border-radius: 1rem;
+  color: #fff;
+  background: linear-gradient(310deg, #131313, #212428);
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.2rem;
+  font-family: "Poppins SemiBold", sans-serif;
+}
+
+/* Experience Subtitle */
+.card-subtitle {
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #ccc;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Card Description */
+.card-description {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+/* Skills Text */
+.skills {
+  font-size: 0.8rem;
+}
+
+/* End Services Section */
+
+/* Portfolio Section */
+
+/* Photo filter button active class */
+.portfolio-nav .active {
+  color: #d04b38 !important;
+  background-color: #222222;
+  border-radius: 2rem;
+}
+
+/* Image Links */
+.portfolio-nav a {
+  color: #fff;
+}
+
+/* Image Links */
+.portfolio-nav .nav-item {
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Portfolio filter buttons container */
+.portfolio-nav {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+}
+
+/* Links */
+.portfolio-nav a {
+  color: #fff;
+}
+
+/* Feature tags */
+.tags {
+  font-size: 0.8rem;
+  color: #5c5b5b;
+  margin-top: 2rem;
+}
+
+/* Responsive Gallery */
+.gallery {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+
+/* Responsive Gallery Images */
+.gallery img {
+  border-radius: 0.2rem;
+}
+
+/* Responsive Gallery */
+@media screen and (max-width: 750px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+/* Image Container */
+.img-container {
+  position: relative;
+}
+
+/* Portfolio Image */
+.portfolio-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Image Hover Content */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #000;
+}
+
+/* Image Hover */
+.img-container:hover .overlay {
+  opacity: 0.8;
+}
+
+/* Title Image Hover */
+.img-hover-title {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+  font-size: 1.3rem;
+  font-family: "Poppins SemiBold", sans-serif;
+}
+
+/* Image Hover Project Category */
+.img-hover-subtitle {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  margin-left: 3rem;
+  margin-bottom: 8rem;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Image Hover Project Category Links */
+
+.img-hover-subtitle a {
+  color: #fff;
+}
+
+/* Icons Image Hover */
+.overlay .fas {
+  margin-right: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  float: right;
+  color: #fff;
+}
+/* End Portfolio Section */
+
+/* Contact Section */
+
+/* Contact Container */
+#contact {
+  padding-top: 8rem !important;
+  text-align: center;
+}
+
+/* Inputs */
+input,
+textarea {
+  padding: 1.5rem !important;
+  background-color: #1a1919 !important;
+  border: 1px solid #383838 !important;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  display: block;
+  margin-top: 3rem;
+  color: #fff;
+}
+
+/* Align items on center */
+.centered {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Social Media Links */
+.findme-links {
+  margin-top: 3rem;
+  word-spacing: 2.5rem;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+/* Social Media Links */
+#contact a {
+  color: #fff;
+}
+/* End Contact Section */
+
+/* Footer */
+.footer {
+  background-color: #0f0f0f;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+/* Single Page Header */
+.post-header {
+  padding: 10rem;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/* Single Page Header Color Overlay */
+#color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+}
+
+/* Single Page Title */
+.post-title {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 2rem;
+}
+
+/* Single Page Paragraph */
+.post-header p {
+  position: relative;
+}
+
+/* Single Page Text */
+.post-info {
+  text-transform: capitalize;
+}
+
+/* Single Page Images */
+#project-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Contact Form 7 Settings */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+  width: 100%;
+  color: #fff;
+  padding: 1rem !important;
+}
+
+/* Contact Form 7 Button */
+.wpcf7 input[type="submit"] {
+  font-size: 0.8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-family: "Poppins Medium", sans-serif;
+  padding: 1rem 2rem 1rem 2rem !important;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+/* 404 Page */
+.error-title {
+  font-family: "Poppins SemiBold", sans-serif;
+  text-align: center;
+  font-size: 7rem;
+}
+
+/* 404 Page */
+.error-container {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: table;
+}
+
+/* 404 Page */
+.error-container .col {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Blog article img thumbnail */
+.blog-article img {
+  width: 100% !important;
+  height: auto;
+}
+
+/* Blog Article */
+.blog-article {
+  text-align: left;
+}
+
+/* Blog Article Title */
+.article-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Blog Container */
+#blog {
+  padding-top: 5rem !important;
+  text-align: center;
+}
